@@ -1,2 +1,10 @@
-package com.nikhilbanerji.runs.user;public record Address() {
+package com.nikhilbanerji.runs.user;
+
+public record Address(
+        String street,
+        String suite,
+        String city,
+        String zipcode,
+        Geo geo
+) {
 }
